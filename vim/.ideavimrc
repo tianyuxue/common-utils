@@ -1,0 +1,63 @@
+""" Map leader to space ---------------------
+let mapleader=" "
+
+""" Plugins  --------------------------------
+set NERDTree
+set surround
+set multiple-cursors
+set commentary
+set argtextobj
+set easymotion
+set textobj-entire
+set ReplaceWithRegister
+
+""" Plugin settings -------------------------
+let g:argtextobj_pairs="[:],(:),<:>"
+
+""" Common settings -------------------------
+set showmode
+set so=5
+set incsearch
+set nu
+
+" Copy to system clipboard as well
+set clipboard+=unnamed
+
+""" Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=gray
+set idearefactormode=keep
+
+""" Mappings --------------------------------
+"tools
+nmap <leader>z <Action>(ToggleDistractionFreeMode)
+nmap <leader>s <Action>(SelectInProjectView)
+
+"refactor
+nmap <leader>r <Action>(RenameElement)
+
+"vcs
+nmap <leader>h <Action>(Vcs.ShowTabbedFileHistory)
+nmap <leader>c <Action>(Vcs.Show.Local.Changes)
+
+"navigation
+nmap <c-o> <Action>(Back)
+nmap <c-i> <Action>(Forward)
+nmap <leader>x <Action>(GotoNextError)
+nmap <leader>X <Action>(GotoPreviousError)
+nmap <leader>g <Action>(GotoDeclaration)
+nmap <leader>i <Action>(GotoImplementation)
+nmap <leader>t <Action>(GotoTest)
+nmap <leader>u <Action>(FindUsages)
+
+nmap <leader>o <Action>(FileStructurePopup)
+nmap <leader>a <Action>(RecentChangedFiles)
+nmap <leader>e <Action>(RecentFiles)
+
+"debug
+nmap <leader>b <Action>(ToggleLineBreakpoint)
+nmap ,c <Action>(CompileDirty)
+nmap ,r <Action>(RunClass)
+nmap ,d <Action>(DebugClass)
+nmap ,t <Action>(RerunTests)
+nmap ,T <Action>(RerunFailedTests)

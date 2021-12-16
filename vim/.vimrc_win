@@ -1,0 +1,13 @@
+set nobackup
+set noeb
+syntax on   
+set number     
+colo elflord    
+set guifont=Courier\ New:h18:cANSI
+set nocompatible
+set ai
+set si 
+set nu  
+set ts=4  
+set bs=indent,eol,start
+set foldmethod=indent
