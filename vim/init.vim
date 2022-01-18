@@ -102,6 +102,9 @@ nnoremap <F5>  :if g:asyncrun_status != 'running'<bar>
 nnoremap <Space>1 :NERDTreeToggle<CR>
 nnoremap <Space>9 :TagbarToggle<CR>
 nmap <Space>f :Files<CR>
+nnoremap <Space>e :Buffers<CR>
+nnoremap <Space><Space> :Rg<CR>
+
 
 "替换光标下单词的键映射, "0表示最近一次y命令复制的内容
 nnoremap <Leader>v viw"0p
@@ -304,7 +307,7 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 " Show all diagnostics.
 nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
 " Manage extensions.
-nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
+" nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
 " Show commands.
 nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
 " Find symbol of current document.
