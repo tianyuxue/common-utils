@@ -1,0 +1,77 @@
+{
+    "workbench.colorTheme": "Monokai Dimmed",
+    "explorer.confirmDelete": false,
+    "files.autoSave": "afterDelay",
+    "remote.SSH.remotePlatform": {
+        "vagrant": "linux"
+    },
+
+    // vim相关配置
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-j>": false
+    },
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "0"],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        {
+            "before": ["<leader>", "1"],
+            "commands": [
+                "workbench.view.explorer"
+            ]
+        },
+        {
+            "before": ["<leader>", "9"],
+            "commands": [
+                "workbench.action.terminal.toggleTerminal"
+            ]
+        },
+        {
+            "before": ["<leader>", "g"],
+            "commands": [
+                "editor.action.goToTypeDefinition"
+            ]
+        },
+        {
+            "before": ["<leader>", "i"],
+            "commands": [
+                "editor.action.goToTypeDefinition"
+            ]
+        },
+        {
+            "before": ["<leader>", "d"],
+            "commands": [
+                "testing.debugAtCursor"
+            ]
+        },
+        {
+            "before": ["<leader>", "o"],
+            "commands": [
+                "workbench.action.gotoSymbol"
+            ]
+        },
+        {
+            "before": ["<leader>", "b"],
+            "commands": [
+                "editor.debug.action.toggleBreakpoint"
+            ]
+        },
+        {
+            "before": ["<leader>", "f"],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        }
+    ]
+}
